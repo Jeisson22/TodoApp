@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello, {{ title() }}</h1>
-      <h2>Esto es un Array, {{subtitle}}</h2>
-      <p>Congratulations! Your app is runding. 🎉</p>
-      <p>Hpñaaaaaaaaaaaaa</p>
-      <ul>
-        <li>
-          Porque 
-        </li>
-      </ul>
-      <ul>
-        <li *ngFor="let sub of subtitle">
-         {{ sub }}
-        </li>
-      </ul>
-</body>
-</html>
+<h1>{{ title() }}</h1>
+<nav>
+  <a routerLink="">Home</a> | 
+  <a routerLink="labs">Labs</a>
+</nav>
 
-
+<hr>
+<router-outlet></router-outlet>
